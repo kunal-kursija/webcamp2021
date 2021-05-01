@@ -44,14 +44,14 @@
         "command": [
             "WebCamp2021\\Composer\\PluginEvents::commandExecution"
         ],
+        "post-install-cmd": [
+            "WebCamp2021\\Composer\\CommandEvents::refreshSettingsPhp"
+        ],
         "pre-operations-exec":[
             "WebCamp2021\\Composer\\InstallerEvents::preOpsExecution"
         ],
         "pre-package-install": [
             "WebCamp2021\\Composer\\PackageEvents::prePackageInstall"
-        ],
-        "post-install-cmd": [
-            "WebCamp2021\\Composer\\CommandEvents::refreshSettingsPhp"
         ],
         "find-code-violations": [
             "vendor/bin/phpcs ."

@@ -29,7 +29,7 @@ class CommandEvents {
 
     $event->getIO()->write("Starting settings.php refresh...");
 
-    // Copy app.setting.php to settings.php & give appropriate t permissions.
+    // Copy app.setting.php to settings.php & give appropriate permissions.
     $fs->copy($drupalRoot . '/sites/default/app.settings.php', $drupalRoot . '/sites/default/settings.php');
     $fs->chmod($drupalRoot . '/sites/default/settings.php', 0666);
 

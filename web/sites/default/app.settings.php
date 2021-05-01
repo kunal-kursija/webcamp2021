@@ -253,7 +253,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
- $settings['config_sync_directory'] = '../config/sync';
+$settings['config_sync_directory'] = '../config/sync';
 
 /**
  * Settings:
@@ -282,7 +282,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'B7f-JY75Wg0TpWmQfrJoLOXEaD_kznJKUg1s3iyOaeMPs0Kg-jKUA0cJfajUpGUDlS924DHCGA';
 
 /**
  * Deployment identifier.
@@ -775,7 +775,17 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  *
  * Keep this code block at the end of this file to take full effect.
  */
-#
+
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'webcamp2021',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
