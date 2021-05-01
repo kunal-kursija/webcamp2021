@@ -12,4 +12,3 @@ if [ ! -d files ]; then
   echo "created the files directory.";
   drush cr;
 fi
-
