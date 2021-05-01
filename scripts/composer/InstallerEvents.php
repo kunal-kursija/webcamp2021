@@ -6,11 +6,13 @@ use Composer\Installer\InstallerEvent;
 
 /**
  * Class InstallerEvents.
+ *
+ * Executes custom code once before packages are installed/updated.
  */
 class InstallerEvents {
 
   /**
-   * Script callbback.
+   * Script callback.
    *
    * @param \Composer\Installer\InstallerEvent $event
    *   Instance provided by composer event dispatcher.

@@ -8,6 +8,8 @@ use Symfony\Component\Filesystem\Filesystem;
 
 /**
  * Class CommandEvents.
+ *
+ * Execute custom code after 'composer install' command.
  */
 class CommandEvents {
 

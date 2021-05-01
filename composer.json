@@ -41,8 +41,8 @@
         ]
     },
     "scripts": {
-        "post-install-cmd": [
-            "WebCamp2021\\Composer\\CommandEvents::refreshSettingsPhp"
+        "command": [
+            "WebCamp2021\\Composer\\PluginEvents::commandExecution"
         ],
         "pre-operations-exec":[
             "WebCamp2021\\Composer\\InstallerEvents::preOpsExecution"
@@ -50,8 +50,8 @@
         "pre-package-install": [
             "WebCamp2021\\Composer\\PackageEvents::prePackageInstall"
         ],
-        "command": [
-            "WebCamp2021\\Composer\\PluginEvents::commandExecution"
+        "post-install-cmd": [
+            "WebCamp2021\\Composer\\CommandEvents::refreshSettingsPhp"
         ],
         "find-code-violations": [
             "vendor/bin/phpcs ."
