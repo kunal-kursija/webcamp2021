@@ -1,0 +1,4 @@
+name: 'WEBCAMP 2020'
+type: module
+description: 'Just another module.'
+core_version_requirement: ^8.8 || ^9

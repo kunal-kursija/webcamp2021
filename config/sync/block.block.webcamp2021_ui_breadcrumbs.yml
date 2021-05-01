@@ -1,0 +1,22 @@
+uuid: 154f8cdf-4029-4c9a-86d0-dac5f8d6b435
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - webcamp2021_ui
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: webcamp2021_ui_breadcrumbs
+theme: webcamp2021_ui
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

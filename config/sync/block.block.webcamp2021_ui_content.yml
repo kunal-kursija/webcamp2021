@@ -1,0 +1,22 @@
+uuid: 2320b45a-b2f5-4ff7-9930-4e4143447268
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - webcamp2021_ui
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: webcamp2021_ui_content
+theme: webcamp2021_ui
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

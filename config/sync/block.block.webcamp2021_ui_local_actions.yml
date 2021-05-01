@@ -1,0 +1,20 @@
+uuid: 2b1a0083-9397-4fd4-8c0f-815bfb08a4c2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - webcamp2021_ui
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: webcamp2021_ui_local_actions
+theme: webcamp2021_ui
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
